@@ -1,0 +1,13 @@
+/*******************************************************************************
+	Fibonacci
+
+ *    Copyright (c) The League of Amazing Programmers 2013-2017
+ *    Level 0
+
+   Print the first 12 numbers of the Fibonacci sequence (see below)
+   (https://www.mathsisfun.com/numbers/fibonacci-sequence.html)
+  
+  If you have it correct, your output should look like this:
+   0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144		
+
+*/
