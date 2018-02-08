@@ -1,16 +1,12 @@
-//    Copyright (c) The League of Amazing Programmers 2013-2017
-//    Level 0
-
-
-
 import javax.swing.JOptionPane;
 
 public class HappyPet {
-	// 2. Create a happinessLevel variable to store the pet's happiness number.
-	//    Initialize to zero.
-
+	
+	// 2. Add the following variable to the next line: static int happinessLevel = 0;
+	// this will be used to store the happiness of your pet
+	
 	public static void main(String[] args) {
-		// 1. Ask the user what kind of pet they want to buy, and store in variable
+		// 1. Ask the user what kind of pet they want to buy, and store their answer in a variable
 
 		// 7. REPEAT steps 3 - 6 enough times to make your pet happy!
 		
