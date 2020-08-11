@@ -21,7 +21,7 @@ public class SleepyHead {
 		else if (day.equalsIgnoreCase("no")) {
 			isWeekend = false;
 		}
-		
+
 		// If it is the weekend, tell the user they get to sleep in.
 		if (isWeekend = true) {
 			JOptionPane.showMessageDialog(null, "Hooray! You get to sleep in today!");
@@ -63,13 +63,19 @@ public class SleepyHead {
 		// This code will repeat until gameIsOver is changed to true
 		while (!gameIsOver) {
 			// Ask the user if the game is over.
-			String gameOver = JOptionPane.showInputDialog("is game over");
-			if (gameOver.equalsIgnoreCase("yes"))
+			String gameOver = JOptionPane.showInputDialog("Is game over?");
+			if (gameOver.equalsIgnoreCase("yes")) {
 				gameIsOver = true;
+				// If they answer "yes", change gameIsOver to true
+				JOptionPane.showMessageDialog(null, "Game is over.");
+			}
 
-			// If they answer "yes", change gameIsOver to true
+			else {
+				JOptionPane.showMessageDialog(null, "Game is not over.");
+			}
 
 		}
+
 		// Tell the user "game is over"
 
 		/*********************** RED SQUARE ********************/
@@ -77,17 +83,42 @@ public class SleepyHead {
 		boolean isRed;
 		// Ask the user what color to draw with. Based on their answer, set the isRed
 		// variable
-
+		String clr = JOptionPane.showInputDialog("What color would you like to color with?");
+		
+		if (clr.equalsIgnoreCase("red")) {
+			isRed = true;
+		}
+		
+		else {
+			isRed = false;
+		}
+		
 		boolean isSquare;
 		// Now ask the user what shape to draw. Based on their answer, set the isSquare
 		// variable
-
+		String shp = JOptionPane.showInputDialog("What shape would you like to draw?");
+		
+		if(shp.equalsIgnoreCase("square")) {
+			isSquare = true;
+		}
+		
+		else {
+			isSquare = false;
+		}
 		// Now you MUST use the && operator to join the booleans for this code.
 		// Ask your teacher if you are not sure how
 		// Use an if statement to ONLY draw a red square when it has been requested (use
 		// the method below)
 		// otherwise, tell the user you don't know how to draw that shape
-
+		
+		if (isRed = true && isSquare = true) {
+			drawRedSquare();
+		}
+		
+		else {
+			JOptionPane.showMessageDialog(null, "Sorry, I don't know how to draw that.");
+		}
+		
 	}
 
 	static void drawRedSquare() {
