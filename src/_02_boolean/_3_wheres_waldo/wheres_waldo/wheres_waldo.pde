@@ -9,7 +9,7 @@ void setup() {
   
   //Find a Where's Waldo picture and drop it into this sketch.     
   PImage waldo = loadImage("waldo.jpg"); // Change this to match your file name.
-  size(500, 500); // Change this to match the size of your waldo picture
+  size(500, 300); // Change this to match the size of your waldo picture
   image(waldo, 0, 0);
 
   /*
